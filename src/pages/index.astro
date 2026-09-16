@@ -4,38 +4,103 @@ import Hero from '../components/Hero.astro';
 import PartnerCarousel from '../components/PartnerCarousel.astro';
 import ApplicationGrid from '../components/ApplicationGrid.astro';
 import StatStrip from '../components/StatStrip.astro';
+import IndiaMap from '../components/IndiaMap.astro';
 import copy from '../content/astra-copy.json';
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 ---
 
 <Base title="Home" description={copy.seoDescriptions.home}>
   <Hero
     title={copy.hero.title}
     subtitle={copy.hero.subtitle}
-    imageSrc="/images/hero-biotech.webp"
-    primaryCta={{ label: 'Find the Right Product', href: '/products' }}
-    secondaryCta={{ label: 'Request a Quote', href: '/contact' }}
+    imageSrc={`${b}/images/hero-biotech.webp`}
+    primaryCta={{ label: 'Explore Products', href: `${b}/products` }}
+    secondaryCta={{ label: 'Request a Quote', href: `${b}/contact` }}
   />
+
+  <!-- Trust strip: stats + partner logos combined -->
+  <StatStrip />
 
   <PartnerCarousel />
 
-  <ApplicationGrid />
+  <!-- Why BioAzure — split layout with image -->
+  <section class="py-20">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="fade-in grid items-center gap-12 lg:grid-cols-2">
+        <div>
+          <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">Why BioAzure</p>
+          <h2 class="mb-6 text-3xl font-bold leading-tight text-primary lg:text-4xl">{copy.whyBioazure.headline}</h2>
+          <p class="mb-8 text-lg leading-relaxed text-gray-600">{copy.whyBioazure.body}</p>
+          <div class="flex flex-wrap gap-4">
+            <a href={`${b}/about`} class="rounded-lg border-2 border-primary px-6 py-3 font-semibold text-primary transition hover:bg-primary hover:text-white">
+              Our Story
+            </a>
+            <a href={`${b}/contact`} class="rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark">
+              Get in Touch
+            </a>
+          </div>
+        </div>
+        <div class="overflow-hidden rounded-2xl shadow-lg">
+          <img src={`${b}/images/lab-scene.webp`} alt="Diagnostic laboratory" class="h-full w-full object-cover" loading="lazy" />
+        </div>
+      </div>
+    </div>
+  </section>
 
-  <StatStrip />
+  <!-- Application areas -->
+  <section class="bg-surface py-20">
+    <div class="fade-in mx-auto max-w-7xl px-4">
+      <div class="mb-12 text-center">
+        <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">What We Distribute</p>
+        <h2 class="text-3xl font-bold text-primary">Application Areas</h2>
+      </div>
+      <ApplicationGrid />
+    </div>
+  </section>
 
-  <section class="py-16">
-    <div class="mx-auto max-w-7xl px-4 text-center">
-      <h2 class="mb-4 text-3xl font-bold text-primary">{copy.whyBioazure.headline}</h2>
-      <p class="mx-auto mb-8 max-w-2xl text-gray-600">
-        {copy.whyBioazure.body}
+  <!-- Cold-chain logistics CTA banner -->
+  <section class="relative overflow-hidden py-24">
+    <img src={`${b}/images/cold-chain.webp`} alt="" class="absolute inset-0 h-full w-full object-cover" loading="lazy" />
+    <div class="absolute inset-0 bg-primary/80"></div>
+    <div class="fade-in relative z-10 mx-auto max-w-7xl px-4 text-center text-white">
+      <h2 class="mb-4 text-3xl font-bold lg:text-4xl">Temperature-controlled delivery across India</h2>
+      <p class="mx-auto mb-8 max-w-2xl text-lg opacity-90">
+        Cold-chain logistics from Mumbai to every major city. Your reagents arrive at the right temperature, every time.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href="/about" class="rounded-lg border-2 border-primary px-6 py-3 font-semibold text-primary hover:bg-primary hover:text-white">
-          Our Story
+        <a href={`${b}/about#reach`} class="rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark">
+          See Our Reach
         </a>
-        <a href="/contact" class="rounded-lg bg-accent px-6 py-3 font-semibold text-white hover:bg-accent-dark">
-          Get in Touch
+        <a href={`${b}/contact`} class="rounded-lg border-2 border-white px-6 py-3 font-semibold text-white transition hover:bg-white/10">
+          Talk to Us
         </a>
       </div>
     </div>
   </section>
+
+  <!-- Quick product finder -->
+  <section class="py-20">
+    <div class="fade-in mx-auto max-w-7xl px-4 text-center">
+      <p class="mb-3 text-sm font-semibold uppercase tracking-wider text-accent">Not sure what you need?</p>
+      <h2 class="mb-4 text-3xl font-bold text-primary">Find the right product in seconds</h2>
+      <p class="mx-auto mb-8 max-w-xl text-gray-600">
+        Tell us your application, organism, or test — we'll point you to the right product from our principals.
+      </p>
+      <div class="flex flex-wrap justify-center gap-4">
+        <a href={`${b}/products`} class="rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:bg-primary-light">
+          Browse All Products
+        </a>
+        <button id="open-chat-home" class="rounded-lg border-2 border-accent px-6 py-3 font-semibold text-accent transition hover:bg-accent hover:text-white">
+          Ask the AI Product Finder
+        </button>
+      </div>
+    </div>
+  </section>
 </Base>
+
+<script>
+  document.getElementById('open-chat-home')?.addEventListener('click', () => {
+    const fab = document.querySelector('.chat-fab') as HTMLButtonElement;
+    fab?.click();
+  });
+</script>

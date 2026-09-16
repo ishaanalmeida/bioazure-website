@@ -2,10 +2,14 @@
 const applications = ['Clinical Microbiology', 'Molecular Diagnostics', 'Food Safety', 'IVD Raw Materials', 'Other'];
 ---
 
-<form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+<!-- Context banner, hidden by default, shown via JS when URL has product param -->
+<div id="quote-context" class="mb-4 hidden rounded-lg border border-accent/30 bg-accent/5 px-4 py-3 text-sm text-gray-700"></div>
+
+<form id="quote-form" action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
   <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
-  <input type="hidden" name="subject" value="New inquiry from BioAzure website" />
-  <input type="hidden" name="redirect" value="https://bioazure.com/contact?sent=true" />
+  <input type="hidden" name="subject" id="form-subject" value="New inquiry from BioAzure website" />
+  <input type="hidden" name="redirect" id="form-redirect" value="" />
+  <input type="hidden" name="specific_product" id="form-specific-product" value="" />
 
   <div class="grid gap-4 sm:grid-cols-2">
     <div>
@@ -38,7 +42,48 @@ const applications = ['Clinical Microbiology', 'Molecular Diagnostics', 'Food Sa
     <label for="message" class="mb-1 block text-sm font-medium text-gray-700">Message *</label>
     <textarea id="message" name="message" rows="4" required class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
   </div>
-  <button type="submit" class="w-full rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark sm:w-auto">
+  <button id="submit-btn" type="submit" class="w-full rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark sm:w-auto">
     Send Inquiry
   </button>
 </form>
+
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const redirectEl = document.getElementById('form-redirect') as HTMLInputElement;
+    if (redirectEl) redirectEl.value = window.location.origin + window.location.pathname + '?sent=true';
+
+    const params = new URLSearchParams(window.location.search);
+    const product = params.get('product');
+    const principal = params.get('principal');
+
+    if (!product) return;
+
+    const contextEl = document.getElementById('quote-context');
+    const subjectEl = document.getElementById('form-subject') as HTMLInputElement;
+    const specificEl = document.getElementById('form-specific-product') as HTMLInputElement;
+    const messageEl = document.getElementById('message') as HTMLTextAreaElement;
+    const submitBtn = document.getElementById('submit-btn');
+
+    // Show context banner
+    if (contextEl) {
+      let html = `Requesting a quote for <strong class="text-primary">${product}</strong>`;
+      if (principal) html += ` by <strong class="text-primary">${principal}</strong>`;
+      contextEl.innerHTML = html;
+      contextEl.classList.remove('hidden');
+    }
+
+    // Update subject line
+    if (subjectEl) subjectEl.value = `Quote request: ${product}`;
+
+    // Set hidden specific product field
+    if (specificEl) specificEl.value = principal ? `${product} (${principal})` : product;
+
+    // Pre-fill message
+    if (messageEl && !messageEl.value) {
+      messageEl.value = `I'm interested in ${product}${principal ? ` from ${principal}` : ''}. Please send me pricing and availability.`;
+    }
+
+    // Update button text
+    if (submitBtn) submitBtn.textContent = 'Send Quote Request';
+  });
+</script>

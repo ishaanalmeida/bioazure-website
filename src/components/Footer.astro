@@ -1,36 +1,50 @@
 ---
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 const year = new Date().getFullYear();
 ---
 
 <footer class="bg-primary-dark text-gray-300">
-  <div class="mx-auto max-w-7xl px-4 py-12">
-    <div class="grid gap-8 md:grid-cols-3">
+  <div class="mx-auto max-w-7xl px-4 py-16">
+    <div class="grid gap-10 sm:grid-cols-2 lg:grid-cols-4">
       <div>
-        <img src="/logos/bioazure-logo-white.svg" alt="BioAzure" class="mb-4 h-8" />
-        <p class="text-sm">
-          Bridging global biotech innovation to India since 2009.
+        <img src={`${b}/logos/bioazure-logo-white.svg`} alt="BioAzure" class="mb-4 h-8" />
+        <p class="mb-4 text-sm leading-relaxed">
+          Distributing European biotech and diagnostic products across India since 2009. Cold-chain delivery, regulatory support, and technical expertise.
         </p>
       </div>
       <div>
-        <h3 class="mb-3 text-sm font-semibold text-white">Quick Links</h3>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Products</h3>
         <ul class="space-y-2 text-sm">
-          <li><a href="/products" class="hover:text-white">Products</a></li>
-          <li><a href="/partners" class="hover:text-white">Partners</a></li>
-          <li><a href="/applications" class="hover:text-white">Applications</a></li>
-          <li><a href="/contact" class="hover:text-white">Contact</a></li>
+          <li><a href={`${b}/applications/clinical-microbiology`} class="transition hover:text-white">Clinical Microbiology</a></li>
+          <li><a href={`${b}/applications/molecular-diagnostics`} class="transition hover:text-white">Molecular Diagnostics</a></li>
+          <li><a href={`${b}/applications/food-safety`} class="transition hover:text-white">Food Safety</a></li>
+          <li><a href={`${b}/applications/ivd-raw-materials`} class="transition hover:text-white">IVD Raw Materials</a></li>
         </ul>
       </div>
       <div>
-        <h3 class="mb-3 text-sm font-semibold text-white">Contact</h3>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Company</h3>
         <ul class="space-y-2 text-sm">
-          <li>+91 98 200 33 465</li>
-          <li>info@bioazure.com</li>
-          <li>Mumbai, India</li>
+          <li><a href={`${b}/about`} class="transition hover:text-white">About Us</a></li>
+          <li><a href={`${b}/partners`} class="transition hover:text-white">Our Partners</a></li>
+          <li><a href={`${b}/products`} class="transition hover:text-white">All Products</a></li>
+          <li><a href={`${b}/contact`} class="transition hover:text-white">Contact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h3 class="mb-4 text-sm font-semibold uppercase tracking-wider text-white">Contact</h3>
+        <ul class="space-y-3 text-sm">
+          <li>
+            <a href="tel:+919820033465" class="transition hover:text-white">+91 98 200 33 465</a>
+          </li>
+          <li>
+            <a href="mailto:info@bioazure.com" class="transition hover:text-white">info@bioazure.com</a>
+          </li>
+          <li>Mumbai 400063, India</li>
           <li>Mon–Sat, 9:30 AM – 5:30 PM IST</li>
         </ul>
       </div>
     </div>
-    <div class="mt-8 border-t border-gray-600 pt-6 text-center text-xs">
+    <div class="mt-12 border-t border-white/10 pt-8 text-center text-xs text-gray-400">
       &copy; {year} BioAzure Technologies Pvt. Ltd. All rights reserved.
     </div>
   </div>

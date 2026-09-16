@@ -37,7 +37,7 @@
     "products": "PhageGuard Listex (anti-Listeria), PhageGuard S (anti-Salmonella), bacteriophage-based biocontrol solutions",
     "website": "https://www.phageguard.com",
     "catalogueUrl": null,
-    "logoFile": "micreos.png"
+    "logoFile": "micreos.svg"
   },
   {
     "id": "medix",
@@ -47,7 +47,7 @@
     "products": "Monoclonal antibodies, polyclonal antibodies, antigens, enzymes (HRP, AP), blocking reagents",
     "website": "https://www.medixbiochemica.com",
     "catalogueUrl": null,
-    "logoFile": "medix.png"
+    "logoFile": "medix.svg"
   },
   {
     "id": "candor",
@@ -57,6 +57,6 @@
     "products": "LowCross-Buffer, Assay Defender, sample diluents, blocking solutions, stabilizers for ELISA and lateral flow",
     "website": "https://www.candor-bioscience.de",
     "catalogueUrl": "/catalogues/candor-catalogue-2025.pdf",
-    "logoFile": "candor.png"
+    "logoFile": "candor.svg"
   }
 ]

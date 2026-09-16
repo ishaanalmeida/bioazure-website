@@ -7,22 +7,30 @@ import products from '../content/products.json';
 import applications from '../content/applications.json';
 import copy from '../content/astra-copy.json';
 
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 function getPartner(id: string) {
   return partners.find(p => p.id === id);
 }
 ---
 
 <Base title="Products" description={copy.seoDescriptions.products}>
-  <Hero title="Our Products" subtitle="Find the right solution for your laboratory, hospital, or manufacturing facility" />
+  <Hero
+    title="Our Products"
+    subtitle="Diagnostic and biotech solutions from six European principals"
+    imageSrc={`${b}/images/lab-scene.webp`}
+  />
 
-  <section class="py-4">
+  <!-- Product finder prompt -->
+  <section class="bg-surface py-8">
     <div class="mx-auto max-w-7xl px-4">
-      <div class="mb-8 rounded-xl border border-accent/30 bg-accent/5 p-6 text-center">
-        <h2 class="mb-2 text-lg font-semibold text-primary">Need help finding the right product?</h2>
-        <p class="mb-4 text-sm text-gray-600">Describe your application and our AI assistant will recommend the best solution.</p>
+      <div class="fade-in flex flex-col items-center gap-4 rounded-xl border border-accent/20 bg-white p-6 text-center shadow-sm md:flex-row md:text-left">
+        <div class="flex-1">
+          <h2 class="mb-1 text-lg font-semibold text-primary">Not sure what you need?</h2>
+          <p class="text-sm text-gray-600">Describe your application — our AI assistant recommends the right product.</p>
+        </div>
         <button
           id="open-chat-from-products"
-          class="rounded-lg bg-accent px-6 py-2 font-semibold text-white hover:bg-accent-dark"
+          class="flex-shrink-0 rounded-lg bg-accent px-6 py-2.5 font-semibold text-white transition hover:bg-accent-dark"
         >
           Ask the Product Finder
         </button>
@@ -30,23 +38,33 @@ function getPartner(id: string) {
     </div>
   </section>
 
-  <section class="pb-16">
+  <section class="py-16">
     <div class="mx-auto max-w-7xl px-4">
-      <div class="mb-8 flex justify-center gap-2">
-        <button data-view="principal" class="view-btn rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white">
-          By Principal
-        </button>
-        <button data-view="application" class="view-btn rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-600">
-          By Application
-        </button>
+      <!-- View toggle -->
+      <div class="mb-10 flex justify-center">
+        <div class="inline-flex rounded-lg border border-gray-200 bg-white p-1 shadow-sm">
+          <button data-view="principal" class="view-btn rounded-md bg-primary px-5 py-2 text-sm font-semibold text-white transition">
+            By Principal
+          </button>
+          <button data-view="application" class="view-btn rounded-md px-5 py-2 text-sm font-semibold text-gray-600 transition hover:text-primary">
+            By Application
+          </button>
+        </div>
       </div>
 
+      <!-- By principal view -->
       <div id="view-principal">
         {partners.map(partner => {
           const partnerProducts = products.filter(p => p.principalId === partner.id);
           return partnerProducts.length > 0 && (
-            <div class="mb-8">
-              <h3 class="mb-4 text-xl font-semibold text-primary">{partner.name}</h3>
+            <div class="mb-12">
+              <div class="mb-6 flex items-center gap-4 border-b border-gray-200 pb-4">
+                <img src={`${b}/logos/${partner.logoFile}`} alt={partner.name} class="h-8 w-auto" loading="lazy" />
+                <div>
+                  <h3 class="text-xl font-bold text-primary">{partner.name}</h3>
+                  <p class="text-sm text-gray-500">{partner.country}</p>
+                </div>
+              </div>
               <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {partnerProducts.map(prod => (
                   <ProductCard
@@ -64,12 +82,19 @@ function getPartner(id: string) {
         })}
       </div>
 
+      <!-- By application view -->
       <div id="view-application" class="hidden">
         {applications.map(app => {
           const appProducts = products.filter(p => p.application === app.slug);
           return (
-            <div class="mb-8">
-              <h3 class="mb-4 text-xl font-semibold text-primary">{app.title}</h3>
+            <div class="mb-12">
+              <div class="mb-6 flex items-center gap-4 border-b border-gray-200 pb-4">
+                <img src={`${b}/images/${app.iconFile}`} alt="" class="h-10 w-10" loading="lazy" />
+                <div>
+                  <h3 class="text-xl font-bold text-primary">{app.title}</h3>
+                  <p class="text-sm text-gray-500">{app.description.split('.')[0]}.</p>
+                </div>
+              </div>
               <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
                 {appProducts.map(prod => {
                   const partner = getPartner(prod.principalId);
@@ -106,9 +131,14 @@ function getPartner(id: string) {
       btns.forEach(b => {
         const isActive = b.getAttribute('data-view') === target;
         b.className = isActive
-          ? 'view-btn rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white'
-          : 'view-btn rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-600';
+          ? 'view-btn rounded-md bg-primary px-5 py-2 text-sm font-semibold text-white transition'
+          : 'view-btn rounded-md px-5 py-2 text-sm font-semibold text-gray-600 transition hover:text-primary';
       });
     });
+  });
+
+  document.getElementById('open-chat-from-products')?.addEventListener('click', () => {
+    const fab = document.querySelector('.chat-fab') as HTMLButtonElement;
+    fab?.click();
   });
 </script>

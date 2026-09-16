@@ -5,21 +5,25 @@ import ProductCard from '../../components/ProductCard.astro';
 import applications from '../../content/applications.json';
 import products from '../../content/products.json';
 import partners from '../../content/partners.json';
+import copy from '../../content/astra-copy.json';
 
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 const app = applications.find(a => a.slug === 'food-safety')!;
 const appProducts = products.filter(p => p.application === app.slug);
 ---
 
-<Base title={app.title} description={app.description}>
+<Base title={app.title} description={copy.seoDescriptions['food-safety']}>
   <Hero title={app.title} subtitle={app.description} />
 
   <section class="py-16">
     <div class="mx-auto max-w-7xl px-4">
-      <h2 class="mb-2 text-2xl font-bold text-primary">Who uses these products</h2>
-      <div class="mb-8 flex flex-wrap gap-2">
-        {app.customerTypes.map(ct => (
-          <span class="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">{ct}</span>
-        ))}
+      <div class="fade-in mb-10">
+        <h2 class="mb-4 text-2xl font-bold text-primary">Who uses these products</h2>
+        <div class="flex flex-wrap gap-2">
+          {app.customerTypes.map(ct => (
+            <span class="rounded-full bg-primary/10 px-4 py-1.5 text-sm font-medium text-primary">{ct}</span>
+          ))}
+        </div>
       </div>
 
       <h2 class="mb-6 text-2xl font-bold text-primary">Available Products</h2>
@@ -39,9 +43,11 @@ const appProducts = products.filter(p => p.application === app.slug);
         })}
       </div>
 
-      <div class="mt-12 text-center">
-        <a href="/contact" class="rounded-lg bg-accent px-6 py-3 font-semibold text-white hover:bg-accent-dark">
-          Request a Quote
+      <div class="mt-12 rounded-xl bg-surface p-8 text-center">
+        <h3 class="mb-2 text-lg font-semibold text-primary">Need help choosing the right product?</h3>
+        <p class="mb-4 text-sm text-gray-600">Tell us about your lab setup and testing needs — we'll recommend the best solution.</p>
+        <a href={`${b}/contact?product=${encodeURIComponent(app.title)}`} class="inline-block rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark">
+          Request a Quote for {app.title}
         </a>
       </div>
     </div>

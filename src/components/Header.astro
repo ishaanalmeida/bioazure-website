@@ -1,19 +1,20 @@
 ---
+const b = import.meta.env.BASE_URL.replace(/\/$/, '');
 const navLinks = [
-  { label: 'Home', href: '/' },
-  { label: 'About', href: '/about' },
-  { label: 'Products', href: '/products' },
-  { label: 'Partners', href: '/partners' },
-  { label: 'Applications', href: '/applications' },
-  { label: 'Contact', href: '/contact' },
+  { label: 'Home', href: `${b}/` },
+  { label: 'About', href: `${b}/about` },
+  { label: 'Products', href: `${b}/products` },
+  { label: 'Partners', href: `${b}/partners` },
+  { label: 'Applications', href: `${b}/applications` },
+  { label: 'Contact', href: `${b}/contact` },
 ];
 const currentPath = Astro.url.pathname;
 ---
 
 <header class="sticky top-0 z-50 bg-white shadow-sm">
   <div class="mx-auto flex max-w-7xl items-center justify-between px-4 py-3">
-    <a href="/" class="flex items-center gap-2">
-      <img src="/logos/bioazure-logo.svg" alt="BioAzure" class="h-10" />
+    <a href={`${b}/`} class="flex items-center gap-2">
+      <img src={`${b}/logos/bioazure-logo.svg`} alt="BioAzure" class="h-10" />
     </a>
 
     <nav class="hidden items-center gap-6 md:flex">
@@ -31,7 +32,7 @@ const currentPath = Astro.url.pathname;
     </nav>
 
     <a
-      href="/contact"
+      href={`${b}/contact`}
       class="hidden rounded-lg bg-accent px-5 py-2 text-sm font-semibold text-white transition-colors hover:bg-accent-dark md:inline-block"
     >
       Request a Quote
@@ -54,7 +55,7 @@ const currentPath = Astro.url.pathname;
         {link.label}
       </a>
     ))}
-    <a href="/contact" class="mt-2 block rounded-lg bg-accent px-4 py-2 text-center text-sm font-semibold text-white">
+    <a href={`${b}/contact`} class="mt-2 block rounded-lg bg-accent px-4 py-2 text-center text-sm font-semibold text-white">
       Request a Quote
     </a>
   </nav>

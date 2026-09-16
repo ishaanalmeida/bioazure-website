@@ -3,7 +3,8 @@ import tailwindcss from '@tailwindcss/vite';
 import sitemap from '@astrojs/sitemap';
 
 export default defineConfig({
-  site: 'https://bioazure.com',
+  site: 'https://ishaanalmeida.github.io',
+  base: '/bioazure-website',
   output: 'static',
   integrations: [sitemap()],
   vite: {
