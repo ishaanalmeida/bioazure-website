@@ -1,1 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32"><rect width="32" height="32" rx="6" fill="#1e3a5f"/><text x="5" y="24" font-family="Inter,sans-serif" font-size="20" font-weight="700" fill="white">B</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <g transform="translate(4,2) scale(0.62)">
+    <path d="M20 0C34 0,44 12,44 26C44 36,36 44,24 44C32 40,38 34,38 26C38 14,30 4,20 0Z" fill="#2AACE2"/>
+    <path d="M18 10C10 14,6 22,8 32C10 38,16 42,22 42C16 38,12 32,12 26C12 18,14 13,18 10Z" fill="#3BA935"/>
+  </g>
+</svg>

@@ -1,1 +1,9 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 40"><text x="0" y="30" font-family="Inter,sans-serif" font-size="24" font-weight="700" fill="white">BioAzure</text></svg>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 44">
+  <!-- Icon mark: lighter blue + lighter green for dark backgrounds -->
+  <g transform="translate(0,2)">
+    <path d="M20 0C34 0,44 12,44 26C44 36,36 44,24 44C32 40,38 34,38 26C38 14,30 4,20 0Z" fill="#5DC4ED"/>
+    <path d="M18 10C10 14,6 22,8 32C10 38,16 42,22 42C16 38,12 32,12 26C12 18,14 13,18 10Z" fill="#5CC75A"/>
+  </g>
+  <!-- Wordmark in white -->
+  <text x="52" y="32" font-family="Inter,system-ui,sans-serif" font-size="26" font-weight="700" letter-spacing="-0.5" fill="white">bioAzure</text>
+</svg>
