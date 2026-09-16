@@ -6,7 +6,7 @@
     "description": "Culture media and AST products from Liofilchem for pathogen isolation, identification, and resistance testing. We supply referral labs, hospital microbiology departments, and public health laboratories across India with cold-chain delivery.",
     "customerTypes": ["Referral laboratories", "Multispecialty hospitals", "Government hospitals", "Public health laboratories"],
     "principalIds": ["liofilchem"],
-    "iconFile": "icon-clinical-micro.svg"
+    "iconFile": "icon-clinical-micro.png"
   },
   {
     "id": "molecular-diagnostics",
@@ -15,7 +15,7 @@
     "description": "PCR kits from Sacace and StripAssay genotyping from ViennaLab for infectious disease testing, pharmacogenetics, and hereditary screening. Available to diagnostic labs and research institutions across India.",
     "customerTypes": ["Referral laboratories", "Hospitals", "Research institutions", "Educational institutions"],
     "principalIds": ["viennalab", "sacace"],
-    "iconFile": "icon-molecular-dx.svg"
+    "iconFile": "icon-molecular-dx.png"
   },
   {
     "id": "food-safety",
@@ -24,7 +24,7 @@
     "description": "PhageGuard bacteriophage solutions from Micreos for targeted Listeria and Salmonella control in food processing. Relevant for Indian food manufacturers, exporters, and testing laboratories working to international food safety standards.",
     "customerTypes": ["Food manufacturers", "Food exporters", "Food testing laboratories", "Quality assurance departments"],
     "principalIds": ["micreos"],
-    "iconFile": "icon-food-safety.svg"
+    "iconFile": "icon-food-safety.png"
   },
   {
     "id": "ivd-raw-materials",
@@ -33,6 +33,6 @@
     "description": "Antibodies, antigens, enzymes, and assay optimization reagents from Medix Biochemica and Candor Bioscience. For Indian IVD manufacturers and R&D teams building or improving diagnostic assays.",
     "customerTypes": ["IVD manufacturers", "Research institutions", "Diagnostic kit developers"],
     "principalIds": ["medix", "candor"],
-    "iconFile": "icon-ivd-raw.svg"
+    "iconFile": "icon-ivd-raw.png"
   }
 ]
