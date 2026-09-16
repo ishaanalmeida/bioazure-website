@@ -3,7 +3,7 @@
     "id": "clinical-microbiology",
     "slug": "clinical-microbiology",
     "title": "Clinical Microbiology",
-    "description": "Support routine culture and antimicrobial susceptibility testing with Liofilchem culture media and AST products from Italy. BioAzure serves referral labs, hospitals and research institutions with pan-India cold-chain distribution.",
+    "description": "Culture media and AST products from Liofilchem for pathogen isolation, identification, and resistance testing. We supply referral labs, hospital microbiology departments, and public health laboratories across India with cold-chain delivery.",
     "customerTypes": ["Referral laboratories", "Multispecialty hospitals", "Government hospitals", "Public health laboratories"],
     "principalIds": ["liofilchem"],
     "iconFile": "icon-clinical-micro.svg"
@@ -12,7 +12,7 @@
     "id": "molecular-diagnostics",
     "slug": "molecular-diagnostics",
     "title": "Molecular Diagnostics",
-    "description": "Source Sacace PCR kits and ViennaLab StripAssay genotyping products for molecular testing workflows. BioAzure connects diagnostic and research laboratories across India with these Italian and Austrian product portfolios.",
+    "description": "PCR kits from Sacace and StripAssay genotyping from ViennaLab for infectious disease testing, pharmacogenetics, and hereditary screening. Available to diagnostic labs and research institutions across India.",
     "customerTypes": ["Referral laboratories", "Hospitals", "Research institutions", "Educational institutions"],
     "principalIds": ["viennalab", "sacace"],
     "iconFile": "icon-molecular-dx.svg"
@@ -21,7 +21,7 @@
     "id": "food-safety",
     "slug": "food-safety",
     "title": "Food Safety & Testing",
-    "description": "Explore phage-based food safety solutions with PhageGuard from Micreos, Netherlands. BioAzure helps food companies source these products for targeted bacterial control in food processing applications.",
+    "description": "PhageGuard bacteriophage solutions from Micreos for targeted Listeria and Salmonella control in food processing. Relevant for Indian food manufacturers, exporters, and testing laboratories working to international food safety standards.",
     "customerTypes": ["Food manufacturers", "Food exporters", "Food testing laboratories", "Quality assurance departments"],
     "principalIds": ["micreos"],
     "iconFile": "icon-food-safety.svg"
@@ -30,7 +30,7 @@
     "id": "ivd-raw-materials",
     "slug": "ivd-raw-materials",
     "title": "IVD Raw Materials",
-    "description": "Source Medix Biochemica IVD raw materials and Candor Bioscience immunoassay optimization products for assay development and manufacturing. BioAzure serves Indian IVD manufacturers and R&D teams through a dedicated global supplier portfolio.",
+    "description": "Antibodies, antigens, enzymes, and assay optimization reagents from Medix Biochemica and Candor Bioscience. For Indian IVD manufacturers and R&D teams building or improving diagnostic assays.",
     "customerTypes": ["IVD manufacturers", "Research institutions", "Diagnostic kit developers"],
     "principalIds": ["medix", "candor"],
     "iconFile": "icon-ivd-raw.svg"

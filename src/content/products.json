@@ -3,7 +3,7 @@
     "principalId": "liofilchem",
     "application": "clinical-microbiology",
     "family": "Culture Media",
-    "description": "Liofilchem's ready-to-use plates and tubes support routine microbial isolation, cultivation and identification in clinical, food testing and research laboratories. Selective and chromogenic media help laboratories target specific organisms and differentiate colonies within established testing workflows.",
+    "description": "Ready-to-use plates, tubes, and dehydrated media from Liofilchem for microbial isolation and identification. The range includes chromogenic and selective media that help labs differentiate target organisms directly on the plate, reducing follow-up testing.",
     "keyProducts": ["Prepared media plates", "Dehydrated media", "Chromogenic media", "Blood culture media"],
     "catalogueUrl": null
   },
@@ -11,7 +11,7 @@
     "principalId": "liofilchem",
     "application": "clinical-microbiology",
     "family": "Antimicrobial Susceptibility Testing",
-    "description": "Liofilchem's AST discs and MIC strips support antimicrobial susceptibility testing by disc diffusion and minimum inhibitory concentration determination. Laboratories can select products for their organism–antimicrobial combinations and apply current EUCAST or CLSI methods and interpretive criteria, as appropriate.",
+    "description": "Liofilchem's antibiotic discs and MIC test strips for resistance profiling by disc diffusion or minimum inhibitory concentration. Products cover a wide range of organism-antimicrobial combinations and work with current EUCAST and CLSI interpretive criteria.",
     "keyProducts": ["Antibiotic discs", "MIC Test Strips", "AST panels"],
     "catalogueUrl": null
   },
@@ -19,7 +19,7 @@
     "principalId": "sacace",
     "application": "molecular-diagnostics",
     "family": "PCR Diagnostic Kits",
-    "description": "Sacace's real-time PCR kits support molecular testing for hepatitis viruses, HIV, HPV, respiratory pathogens and sexually transmitted infections. The portfolio offers qualitative detection and, where available, quantitative assays, with kit selection guided by the target, specimen type and compatible PCR platform.",
+    "description": "Sacace's real-time PCR kits for hepatitis B/C, HIV, HPV genotyping, respiratory panels, and STI detection. Both qualitative and quantitative formats available, compatible with common real-time PCR platforms.",
     "keyProducts": ["Hepatitis B/C PCR", "HIV-1 quantitative PCR", "HPV genotyping", "Respiratory panel", "STI panel"],
     "catalogueUrl": "/catalogues/sacace-catalogue-2026.pdf"
   },
@@ -27,7 +27,7 @@
     "principalId": "viennalab",
     "application": "molecular-diagnostics",
     "family": "StripAssay Kits",
-    "description": "ViennaLab's StripAssay kits use reverse-hybridization technology to detect defined genetic variants through a strip-based workflow. Applications span pharmacogenetics, thrombophilia and selected HLA-associated markers, helping molecular laboratories build targeted genotyping panels.",
+    "description": "ViennaLab's reverse-hybridization strip tests for pharmacogenetics (CYP2D6, CYP2C19), thrombophilia (Factor V Leiden, Prothrombin), and HLA-B27. A cost-effective way to run targeted genotyping without sequencing infrastructure.",
     "keyProducts": ["Pharmacogenetics StripAssay (CYP2D6, CYP2C19)", "Thrombophilia StripAssay (Factor V, Factor II)", "HLA-B27 StripAssay", "Lactose intolerance StripAssay"],
     "catalogueUrl": "/catalogues/viennalab-catalogue-2026.pdf"
   },
@@ -35,7 +35,7 @@
     "principalId": "micreos",
     "application": "food-safety",
     "family": "PhageGuard Solutions",
-    "description": "Micreos' PhageGuard solutions use bacteriophages to target Listeria and Salmonella in food-processing applications. Designed to complement existing hygiene and food-safety controls, these biocontrol tools can be evaluated for specific food matrices and processing conditions, subject to applicable regulatory requirements.",
+    "description": "Bacteriophage-based biocontrol from Micreos. PhageGuard Listex and PhageGuard S use naturally occurring phages to reduce Listeria and Salmonella on food surfaces. No chemicals, no antibiotics, no impact on taste or texture.",
     "keyProducts": ["PhageGuard Listex (anti-Listeria)", "PhageGuard S (anti-Salmonella)"],
     "catalogueUrl": null
   },
@@ -43,7 +43,7 @@
     "principalId": "medix",
     "application": "ivd-raw-materials",
     "family": "Immunodiagnostic Raw Materials",
-    "description": "Medix Biochemica supplies antibodies, antigens and enzymes for IVD assay development and manufacturing. The portfolio helps R&D and procurement teams source critical biological components for assay design, validation and ongoing production.",
+    "description": "Antibodies, antigens, and enzymes from Medix Biochemica for IVD assay development and manufacturing. Used by kit makers building cardiac, infectious disease, and hormone assays who need consistent lot-to-lot performance at production scale.",
     "keyProducts": ["Cardiac markers (Troponin, CRP, BNP)", "Infectious disease antibodies", "Hormone antibodies", "HRP and AP enzymes"],
     "catalogueUrl": null
   },
@@ -51,7 +51,7 @@
     "principalId": "candor",
     "application": "ivd-raw-materials",
     "family": "Immunoassay Optimization",
-    "description": "Candor Bioscience, part of the Medix Biochemica group, offers LowCross-Buffer, Assay Defender and HAMA blockers to address interference in immunoassays. These reagents help development teams reduce nonspecific binding and antibody-mediated interference, with selection and performance verified in the intended assay format.",
+    "description": "Candor Bioscience's LowCross-Buffer, Assay Defender, and HAMA blockers for ELISA and lateral flow development. If you're fighting background noise, heterophilic interference, or reagent degradation, these are purpose-built solutions from a team that specializes in assay troubleshooting.",
     "keyProducts": ["LowCross-Buffer (interference blocker)", "Assay Defender (long-term stabilizer)", "HAMA blockers", "Sample diluents"],
     "catalogueUrl": "/catalogues/candor-catalogue-2025.pdf"
   }
