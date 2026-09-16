@@ -2,9 +2,10 @@
 import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import partners from '../content/partners.json';
+import copy from '../content/astra-copy.json';
 ---
 
-<Base title="Partners" description="BioAzure represents 6 world-class biotech and diagnostics companies across Europe and beyond.">
+<Base title="Partners" description={copy.seoDescriptions.partners}>
   <Hero title="Our Global Partners" subtitle="World-class technology providers, trusted by BioAzure since 2009" />
 
   <section class="py-16">

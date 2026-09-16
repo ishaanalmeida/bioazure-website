@@ -4,12 +4,13 @@ import Hero from '../components/Hero.astro';
 import PartnerCarousel from '../components/PartnerCarousel.astro';
 import ApplicationGrid from '../components/ApplicationGrid.astro';
 import StatStrip from '../components/StatStrip.astro';
+import copy from '../content/astra-copy.json';
 ---
 
-<Base title="Home" description="BioAzure — India's trusted distributor of global biotech and diagnostic solutions since 2009.">
+<Base title="Home" description={copy.seoDescriptions.home}>
   <Hero
-    title="Bridging Global Biotech Innovation to India"
-    subtitle="For over 17 years, BioAzure has connected India's laboratories, hospitals, and food companies with the world's most trusted diagnostic and biotechnology brands."
+    title={copy.hero.title}
+    subtitle={copy.hero.subtitle}
     imageSrc="/images/hero-biotech.webp"
     primaryCta={{ label: 'Find the Right Product', href: '/products' }}
     secondaryCta={{ label: 'Request a Quote', href: '/contact' }}
@@ -23,9 +24,9 @@ import StatStrip from '../components/StatStrip.astro';
 
   <section class="py-16">
     <div class="mx-auto max-w-7xl px-4 text-center">
-      <h2 class="mb-4 text-3xl font-bold text-primary">Why BioAzure?</h2>
+      <h2 class="mb-4 text-3xl font-bold text-primary">{copy.whyBioazure.headline}</h2>
       <p class="mx-auto mb-8 max-w-2xl text-gray-600">
-        Founded by two PhDs with decades of experience in biotechnology, BioAzure brings technical depth, regulatory know-how, and a pan-India distribution network that most distributors simply cannot match.
+        {copy.whyBioazure.body}
       </p>
       <div class="flex flex-wrap justify-center gap-4">
         <a href="/about" class="rounded-lg border-2 border-primary px-6 py-3 font-semibold text-primary hover:bg-primary hover:text-white">

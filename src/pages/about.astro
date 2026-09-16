@@ -3,29 +3,18 @@ import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import StatStrip from '../components/StatStrip.astro';
 import IndiaMap from '../components/IndiaMap.astro';
+import copy from '../content/astra-copy.json';
 ---
 
-<Base title="About" description="The BioAzure story — founded in 2009 by two PhDs to bridge global biotech innovation and India's growing diagnostics market.">
+<Base title="About" description={copy.seoDescriptions.about}>
   <Hero title="Our Story" subtitle="A dream to transform biotechnology — from Mumbai to all of India" />
 
   <section class="py-16">
     <div class="mx-auto max-w-3xl px-4">
       <div class="space-y-4 text-lg leading-relaxed text-gray-700">
-        <p>
-          In 2009, in the vibrant city of Mumbai, a dream took shape — a dream to build a bridge between the world's most innovative biotechnology and the growing needs of India's diagnostics and life sciences market.
-        </p>
-        <p>
-          That dream became BioAzure.
-        </p>
-        <p>
-          Founded by Dr. Adrian Almeida and Dr. Asha Kulkarni Almeida, BioAzure set out to make cutting-edge, regulatory-approved biotechnology products accessible, practical, and reasonably priced for the Indian market. The goal was always bigger than importing products — it was about helping customers move faster, achieve world-class quality, and create solutions that make a meaningful difference.
-        </p>
-        <p>
-          Over the years, BioAzure built partnerships with leading technology providers across the United States, Europe, and beyond. These relationships brought together global innovation and local knowledge, connecting international expertise with the realities of the Indian industry.
-        </p>
-        <p>
-          Today, BioAzure serves referral laboratories, multispecialty hospitals, government organizations, food companies, IVD manufacturers, and research institutions across India — supported by cold-chain logistics, technical expertise, and a deep understanding of regulatory requirements.
-        </p>
+        {copy.aboutStory.map(paragraph => (
+          <p>{paragraph}</p>
+        ))}
       </div>
     </div>
   </section>

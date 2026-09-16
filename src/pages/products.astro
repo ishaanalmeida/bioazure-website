@@ -5,13 +5,14 @@ import ProductCard from '../components/ProductCard.astro';
 import partners from '../content/partners.json';
 import products from '../content/products.json';
 import applications from '../content/applications.json';
+import copy from '../content/astra-copy.json';
 
 function getPartner(id: string) {
   return partners.find(p => p.id === id);
 }
 ---
 
-<Base title="Products" description="Browse BioAzure's product portfolio — diagnostics, molecular testing, food safety, and IVD raw materials from 6 global principals.">
+<Base title="Products" description={copy.seoDescriptions.products}>
   <Hero title="Our Products" subtitle="Find the right solution for your laboratory, hospital, or manufacturing facility" />
 
   <section class="py-4">

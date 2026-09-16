@@ -1,0 +1,51 @@
+{
+  "hero": {
+    "title": "Global Biotech and IVD Solutions, Delivered Across India",
+    "subtitle": "Access specialist products from Liofilchem, Sacace, ViennaLab, Micreos, Medix Biochemica and Candor Bioscience. We support laboratories, hospitals, food companies, IVD manufacturers and research institutions with technical expertise and pan-India cold-chain distribution."
+  },
+  "whyBioazure": {
+    "headline": "Scientific Depth. Dependable Distribution.",
+    "body": "Founded in Mumbai in 2009 by Dr. Adrian Almeida and Dr. Asha Kulkarni Almeida, both PhDs, BioAzure brings scientific depth to biotech and IVD procurement. We combine product expertise with regulatory knowledge to support informed selection for your application. Our pan-India cold-chain distribution supports temperature-controlled delivery from global principals to your facility."
+  },
+  "aboutStory": [
+    "BioAzure Technologies Pvt. Ltd. began in Mumbai in 2009 with a shared ambition: to bridge global biotechnology and the needs of Indian laboratories. Founded by Dr. Adrian Almeida and Dr. Asha Kulkarni Almeida, both PhDs, the company grew from two scientists’ belief that access to advanced diagnostics should not be limited by geography or cost.",
+    "Their mission went beyond importing products. They wanted to make cutting-edge diagnostics more accessible and affordable, helping laboratories find solutions suited to their work and budgets. That meant understanding the needs of lab managers, procurement teams and researchers—and treating scientific relevance and dependable supply as equally important.",
+    "BioAzure built partnerships across Europe, bringing together complementary expertise: Liofilchem in Italy for culture media and antimicrobial susceptibility testing; Sacace in Italy for PCR kits; ViennaLab in Austria for StripAssay genotyping; Micreos in the Netherlands for PhageGuard food safety solutions; Medix Biochemica in Finland for IVD raw materials; and Candor Bioscience in Germany, part of the Medix group, for immunoassay optimization.",
+    "Today, BioAzure serves referral laboratories, hospitals, government organisations, food companies, IVD manufacturers and research institutions across India. With pan-India cold-chain distribution and a portfolio spanning diagnostics, food safety and assay development, the company continues to pursue its founders’ goal: connecting Indian teams with global biotechnology that supports their everyday work."
+  ],
+  "partners": {
+    "liofilchem": "Liofilchem, Italy, offers culture media and antimicrobial susceptibility testing (AST) products for clinical and industrial microbiology. For Indian laboratories, its portfolio supports microbial isolation and susceptibility assessment, helping teams inform treatment decisions and maintain microbiological quality-control workflows.",
+    "sacace": "Sacace, Italy, develops PCR kits for molecular testing, supporting the detection of clinically relevant targets. Available through BioAzure, its portfolio helps Indian referral laboratories and hospitals build molecular diagnostic workflows around their testing needs.",
+    "viennalab": "ViennaLab, Austria, offers StripAssay genotyping solutions for targeted genetic testing. Its strip-based format supports the identification of defined genetic variants, helping Indian laboratories develop focused testing services without relying on sequencing for every application.",
+    "micreos": "Micreos, Netherlands, provides PhageGuard bacteriophage solutions for targeted control of foodborne pathogens. For Indian food companies, these solutions complement existing food-safety measures, supporting pathogen-reduction strategies and efforts to meet customer and market requirements.",
+    "medix": "Medix Biochemica, Finland, supplies IVD raw materials for diagnostic assay development and manufacturing. For Indian IVD manufacturers and R&D teams, its portfolio supports the selection of critical assay components, with a focus on analytical performance and consistency as products move toward commercial production.",
+    "candor": "Candor Bioscience, Germany, part of the Medix Biochemica group, offers solutions for immunoassay optimization. Its reagents help Indian assay developers address nonspecific binding, background signal and reagent stability, supporting the development of robust diagnostic assays."
+  },
+  "products": {
+    "Culture Media": "Liofilchem’s ready-to-use plates and tubes support routine microbial isolation, cultivation and identification in clinical, food testing and research laboratories. Selective and chromogenic media help laboratories target specific organisms and differentiate colonies within established testing workflows.",
+    "Antimicrobial Susceptibility Testing": "Liofilchem’s AST discs and MIC strips support antimicrobial susceptibility testing by disc diffusion and minimum inhibitory concentration determination. Laboratories can select products for their organism–antimicrobial combinations and apply current EUCAST or CLSI methods and interpretive criteria, as appropriate.",
+    "PCR Diagnostic Kits": "Sacace’s real-time PCR kits support molecular testing for hepatitis viruses, HIV, HPV, respiratory pathogens and sexually transmitted infections. The portfolio offers qualitative detection and, where available, quantitative assays, with kit selection guided by the target, specimen type and compatible PCR platform.",
+    "StripAssay Kits": "ViennaLab’s StripAssay kits use reverse-hybridization technology to detect defined genetic variants through a strip-based workflow. Applications span pharmacogenetics, thrombophilia and selected HLA-associated markers, helping molecular laboratories build targeted genotyping panels.",
+    "PhageGuard Solutions": "Micreos’ PhageGuard solutions use bacteriophages to target Listeria and Salmonella in food-processing applications. Designed to complement existing hygiene and food-safety controls, these biocontrol tools can be evaluated for specific food matrices and processing conditions, subject to applicable regulatory requirements.",
+    "Immunodiagnostic Raw Materials": "Medix Biochemica supplies antibodies, antigens and enzymes for IVD assay development and manufacturing. The portfolio helps R&D and procurement teams source critical biological components for assay design, validation and ongoing production.",
+    "Immunoassay Optimization": "Candor Bioscience, part of the Medix Biochemica group, offers LowCross-Buffer, Assay Defender and HAMA blockers to address interference in immunoassays. These reagents help development teams reduce nonspecific binding and antibody-mediated interference, with selection and performance verified in the intended assay format."
+  },
+  "applications": {
+    "clinical-microbiology": "Support routine culture and antimicrobial susceptibility testing with Liofilchem culture media and AST products from Italy. BioAzure serves referral labs, hospitals and research institutions with pan-India cold-chain distribution.",
+    "molecular-diagnostics": "Source Sacace PCR kits and ViennaLab StripAssay genotyping products for molecular testing workflows. BioAzure connects diagnostic and research laboratories across India with these Italian and Austrian product portfolios.",
+    "food-safety": "Explore phage-based food safety solutions with PhageGuard from Micreos, Netherlands. BioAzure helps food companies source these products for targeted bacterial control in food processing applications.",
+    "ivd-raw-materials": "Source Medix Biochemica IVD raw materials and Candor Bioscience immunoassay optimization products for assay development and manufacturing. BioAzure serves Indian IVD manufacturers and R&D teams through a dedicated global supplier portfolio."
+  },
+  "seoDescriptions": {
+    "home": "BioAzure distributes global biotech and IVD products across India, serving laboratories, food companies and manufacturers with cold-chain delivery.",
+    "about": "Founded in Mumbai in 2009 by Dr. Adrian Almeida and Dr. Asha Kulkarni Almeida, BioAzure distributes global biotech and IVD products across India.",
+    "products": "Explore culture media, AST products, PCR kits, genotyping assays, PhageGuard and IVD raw materials from BioAzure's global principals.",
+    "partners": "Explore BioAzure's principals: Liofilchem, Sacace, ViennaLab, Micreos, Medix Biochemica and Candor Bioscience.",
+    "contact": "Contact BioAzure in Mumbai for biotech and IVD product enquiries, procurement requirements and pan-India cold-chain distribution.",
+    "applications": "Explore BioAzure products for clinical microbiology, molecular diagnostics, food safety and IVD assay development and manufacturing.",
+    "clinical-microbiology": "Source Liofilchem culture media and antimicrobial susceptibility testing products from BioAzure for clinical microbiology labs across India.",
+    "molecular-diagnostics": "Explore Sacace PCR kits and ViennaLab StripAssay genotyping products from BioAzure for molecular diagnostics and research in India.",
+    "food-safety": "Explore Micreos PhageGuard phage-based solutions for targeted bacterial control in food processing, distributed in India by BioAzure.",
+    "ivd-raw-materials": "Source Medix Biochemica IVD raw materials and Candor Bioscience immunoassay optimization products in India through BioAzure."
+  }
+}

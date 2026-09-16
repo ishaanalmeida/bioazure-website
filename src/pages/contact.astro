@@ -2,11 +2,12 @@
 import Base from '../layouts/Base.astro';
 import Hero from '../components/Hero.astro';
 import QuoteForm from '../components/QuoteForm.astro';
+import copy from '../content/astra-copy.json';
 
 const sent = Astro.url.searchParams.get('sent') === 'true';
 ---
 
-<Base title="Contact" description="Get in touch with BioAzure — request a quote, ask about products, or reach our team in Mumbai.">
+<Base title="Contact" description={copy.seoDescriptions.contact}>
   <Hero title="Get in Touch" subtitle="Request a quote, ask a product question, or reach our team directly" />
 
   <section class="py-16">

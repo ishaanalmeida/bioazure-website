@@ -2,9 +2,10 @@
 import Base from '../../layouts/Base.astro';
 import Hero from '../../components/Hero.astro';
 import ApplicationGrid from '../../components/ApplicationGrid.astro';
+import copy from '../../content/astra-copy.json';
 ---
 
-<Base title="Applications" description="BioAzure solutions for clinical microbiology, molecular diagnostics, food safety, and IVD manufacturing.">
+<Base title="Applications" description={copy.seoDescriptions.applications}>
   <Hero title="Application Areas" subtitle="Specialized solutions for every segment of the diagnostics and life sciences industry" />
   <ApplicationGrid />
 </Base>

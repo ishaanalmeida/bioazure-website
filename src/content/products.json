@@ -3,7 +3,7 @@
     "principalId": "liofilchem",
     "application": "clinical-microbiology",
     "family": "Culture Media",
-    "description": "Ready-to-use culture media plates, tubes, and bottles for clinical microbiology laboratories. Covers aerobic, anaerobic, and selective media for pathogen isolation and identification.",
+    "description": "Liofilchem's ready-to-use plates and tubes support routine microbial isolation, cultivation and identification in clinical, food testing and research laboratories. Selective and chromogenic media help laboratories target specific organisms and differentiate colonies within established testing workflows.",
     "keyProducts": ["Prepared media plates", "Dehydrated media", "Chromogenic media", "Blood culture media"],
     "catalogueUrl": null
   },
@@ -11,7 +11,7 @@
     "principalId": "liofilchem",
     "application": "clinical-microbiology",
     "family": "Antimicrobial Susceptibility Testing",
-    "description": "Antibiotic susceptibility discs, MIC test strips, and panels compliant with EUCAST and CLSI standards for accurate resistance profiling.",
+    "description": "Liofilchem's AST discs and MIC strips support antimicrobial susceptibility testing by disc diffusion and minimum inhibitory concentration determination. Laboratories can select products for their organism–antimicrobial combinations and apply current EUCAST or CLSI methods and interpretive criteria, as appropriate.",
     "keyProducts": ["Antibiotic discs", "MIC Test Strips", "AST panels"],
     "catalogueUrl": null
   },
@@ -19,7 +19,7 @@
     "principalId": "sacace",
     "application": "molecular-diagnostics",
     "family": "PCR Diagnostic Kits",
-    "description": "Real-time and conventional PCR kits for detection of infectious diseases including hepatitis, HIV, HPV, respiratory pathogens, and STIs.",
+    "description": "Sacace's real-time PCR kits support molecular testing for hepatitis viruses, HIV, HPV, respiratory pathogens and sexually transmitted infections. The portfolio offers qualitative detection and, where available, quantitative assays, with kit selection guided by the target, specimen type and compatible PCR platform.",
     "keyProducts": ["Hepatitis B/C PCR", "HIV-1 quantitative PCR", "HPV genotyping", "Respiratory panel", "STI panel"],
     "catalogueUrl": "/catalogues/sacace-catalogue-2026.pdf"
   },
@@ -27,7 +27,7 @@
     "principalId": "viennalab",
     "application": "molecular-diagnostics",
     "family": "StripAssay Kits",
-    "description": "Reverse-hybridization strip-based assays for genotyping and mutation detection. Gold standard in pharmacogenetics and hereditary disease screening.",
+    "description": "ViennaLab's StripAssay kits use reverse-hybridization technology to detect defined genetic variants through a strip-based workflow. Applications span pharmacogenetics, thrombophilia and selected HLA-associated markers, helping molecular laboratories build targeted genotyping panels.",
     "keyProducts": ["Pharmacogenetics StripAssay (CYP2D6, CYP2C19)", "Thrombophilia StripAssay (Factor V, Factor II)", "HLA-B27 StripAssay", "Lactose intolerance StripAssay"],
     "catalogueUrl": "/catalogues/viennalab-catalogue-2026.pdf"
   },
@@ -35,7 +35,7 @@
     "principalId": "micreos",
     "application": "food-safety",
     "family": "PhageGuard Solutions",
-    "description": "Bacteriophage-based biocontrol products that target and eliminate specific foodborne pathogens on food surfaces without chemicals, antibiotics, or impact on taste.",
+    "description": "Micreos' PhageGuard solutions use bacteriophages to target Listeria and Salmonella in food-processing applications. Designed to complement existing hygiene and food-safety controls, these biocontrol tools can be evaluated for specific food matrices and processing conditions, subject to applicable regulatory requirements.",
     "keyProducts": ["PhageGuard Listex (anti-Listeria)", "PhageGuard S (anti-Salmonella)"],
     "catalogueUrl": null
   },
@@ -43,7 +43,7 @@
     "principalId": "medix",
     "application": "ivd-raw-materials",
     "family": "Immunodiagnostic Raw Materials",
-    "description": "High-quality antibodies, antigens, and enzymes for IVD test kit manufacturing. Used by diagnostics companies worldwide to build immunoassays.",
+    "description": "Medix Biochemica supplies antibodies, antigens and enzymes for IVD assay development and manufacturing. The portfolio helps R&D and procurement teams source critical biological components for assay design, validation and ongoing production.",
     "keyProducts": ["Cardiac markers (Troponin, CRP, BNP)", "Infectious disease antibodies", "Hormone antibodies", "HRP and AP enzymes"],
     "catalogueUrl": null
   },
@@ -51,7 +51,7 @@
     "principalId": "candor",
     "application": "ivd-raw-materials",
     "family": "Immunoassay Optimization",
-    "description": "Reagents that eliminate matrix interference, reduce background noise, and stabilize immunoassay components for ELISA, lateral flow, and CLIA development.",
+    "description": "Candor Bioscience, part of the Medix Biochemica group, offers LowCross-Buffer, Assay Defender and HAMA blockers to address interference in immunoassays. These reagents help development teams reduce nonspecific binding and antibody-mediated interference, with selection and performance verified in the intended assay format.",
     "keyProducts": ["LowCross-Buffer (interference blocker)", "Assay Defender (long-term stabilizer)", "HAMA blockers", "Sample diluents"],
     "catalogueUrl": "/catalogues/candor-catalogue-2025.pdf"
   }
