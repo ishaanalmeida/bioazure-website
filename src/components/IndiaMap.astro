@@ -1,0 +1,41 @@
+---
+const cities = [
+  { name: 'Mumbai (HQ)', x: 73.85, y: 19.07, isHQ: true },
+  { name: 'Delhi', x: 77.1, y: 28.7, isHQ: false },
+  { name: 'Kolkata', x: 88.36, y: 22.57, isHQ: false },
+  { name: 'Chennai', x: 80.27, y: 13.08, isHQ: false },
+  { name: 'Bangalore', x: 77.59, y: 12.97, isHQ: false },
+  { name: 'Hyderabad', x: 78.47, y: 17.38, isHQ: false },
+  { name: 'Pune', x: 73.85, y: 18.52, isHQ: false },
+  { name: 'Ahmedabad', x: 72.57, y: 23.02, isHQ: false },
+  { name: 'Cochin', x: 76.27, y: 9.93, isHQ: false },
+  { name: 'Goa', x: 73.83, y: 15.49, isHQ: false },
+  { name: 'Bhubaneswar', x: 85.82, y: 20.3, isHQ: false },
+  { name: 'Nagpur', x: 79.09, y: 21.15, isHQ: false },
+  { name: 'Mangalore', x: 74.86, y: 12.91, isHQ: false },
+];
+
+function toSvg(lon: number, lat: number) {
+  const x = (lon - 68) * (400 / 30);
+  const y = (35 - lat) * (500 / 30);
+  return { x, y };
+}
+---
+
+<div class="mx-auto max-w-md">
+  <svg viewBox="0 0 400 500" class="w-full" role="img" aria-label="BioAzure distribution map of India">
+    <rect width="400" height="500" fill="none" />
+    {cities.map(c => {
+      const { x, y } = toSvg(c.x, c.y);
+      return (
+        <g>
+          <circle cx={x} cy={y} r={c.isHQ ? 8 : 5} fill={c.isHQ ? '#2d8a4e' : '#1e3a5f'} opacity="0.8" />
+          <text x={x + 10} y={y + 4} font-size="10" fill="#374151" font-family="Inter, sans-serif">
+            {c.name}
+          </text>
+        </g>
+      );
+    })}
+  </svg>
+  <p class="mt-2 text-center text-xs text-gray-400">Distribution network across India</p>
+</div>

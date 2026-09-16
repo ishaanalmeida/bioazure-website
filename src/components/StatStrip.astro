@@ -1,0 +1,19 @@
+---
+const stats = [
+  { value: '2009', label: 'Founded' },
+  { value: '6', label: 'Global Principals' },
+  { value: 'Pan-India', label: 'Distribution Network' },
+  { value: 'PhD', label: 'Founded by Scientists' },
+];
+---
+
+<section class="bg-primary py-12 text-white">
+  <div class="mx-auto grid max-w-7xl grid-cols-2 gap-8 px-4 text-center md:grid-cols-4">
+    {stats.map(s => (
+      <div>
+        <div class="text-3xl font-bold">{s.value}</div>
+        <div class="mt-1 text-sm opacity-80">{s.label}</div>
+      </div>
+    ))}
+  </div>
+</section>

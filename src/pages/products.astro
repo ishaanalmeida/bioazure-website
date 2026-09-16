@@ -1,0 +1,113 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import ProductCard from '../components/ProductCard.astro';
+import partners from '../content/partners.json';
+import products from '../content/products.json';
+import applications from '../content/applications.json';
+
+function getPartner(id: string) {
+  return partners.find(p => p.id === id);
+}
+---
+
+<Base title="Products" description="Browse BioAzure's product portfolio — diagnostics, molecular testing, food safety, and IVD raw materials from 6 global principals.">
+  <Hero title="Our Products" subtitle="Find the right solution for your laboratory, hospital, or manufacturing facility" />
+
+  <section class="py-4">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mb-8 rounded-xl border border-accent/30 bg-accent/5 p-6 text-center">
+        <h2 class="mb-2 text-lg font-semibold text-primary">Need help finding the right product?</h2>
+        <p class="mb-4 text-sm text-gray-600">Describe your application and our AI assistant will recommend the best solution.</p>
+        <button
+          id="open-chat-from-products"
+          class="rounded-lg bg-accent px-6 py-2 font-semibold text-white hover:bg-accent-dark"
+        >
+          Ask the Product Finder
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <section class="pb-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <div class="mb-8 flex justify-center gap-2">
+        <button data-view="principal" class="view-btn rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white">
+          By Principal
+        </button>
+        <button data-view="application" class="view-btn rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-600">
+          By Application
+        </button>
+      </div>
+
+      <div id="view-principal">
+        {partners.map(partner => {
+          const partnerProducts = products.filter(p => p.principalId === partner.id);
+          return partnerProducts.length > 0 && (
+            <div class="mb-8">
+              <h3 class="mb-4 text-xl font-semibold text-primary">{partner.name}</h3>
+              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {partnerProducts.map(prod => (
+                  <ProductCard
+                    principalName={partner.name}
+                    principalLogo={partner.logoFile}
+                    family={prod.family}
+                    description={prod.description}
+                    keyProducts={prod.keyProducts}
+                    catalogueUrl={prod.catalogueUrl}
+                  />
+                ))}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+
+      <div id="view-application" class="hidden">
+        {applications.map(app => {
+          const appProducts = products.filter(p => p.application === app.slug);
+          return (
+            <div class="mb-8">
+              <h3 class="mb-4 text-xl font-semibold text-primary">{app.title}</h3>
+              <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+                {appProducts.map(prod => {
+                  const partner = getPartner(prod.principalId);
+                  return partner && (
+                    <ProductCard
+                      principalName={partner.name}
+                      principalLogo={partner.logoFile}
+                      family={prod.family}
+                      description={prod.description}
+                      keyProducts={prod.keyProducts}
+                      catalogueUrl={prod.catalogueUrl}
+                    />
+                  );
+                })}
+              </div>
+            </div>
+          );
+        })}
+      </div>
+    </div>
+  </section>
+</Base>
+
+<script>
+  const btns = document.querySelectorAll('.view-btn');
+  const views = { principal: document.getElementById('view-principal'), application: document.getElementById('view-application') };
+
+  btns.forEach(btn => {
+    btn.addEventListener('click', () => {
+      const target = btn.getAttribute('data-view') as 'principal' | 'application';
+      Object.entries(views).forEach(([key, el]) => {
+        el?.classList.toggle('hidden', key !== target);
+      });
+      btns.forEach(b => {
+        const isActive = b.getAttribute('data-view') === target;
+        b.className = isActive
+          ? 'view-btn rounded-lg bg-primary px-4 py-2 text-sm font-semibold text-white'
+          : 'view-btn rounded-lg border border-gray-300 px-4 py-2 text-sm font-semibold text-gray-600';
+      });
+    });
+  });
+</script>

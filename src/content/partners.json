@@ -1,0 +1,62 @@
+[
+  {
+    "id": "liofilchem",
+    "name": "Liofilchem",
+    "country": "Italy",
+    "description": "Manufacturer of culture media, antimicrobial susceptibility testing products, and rapid diagnostic solutions for clinical microbiology laboratories.",
+    "products": "Culture media (ready-to-use plates, tubes, bottles), antimicrobial susceptibility discs and strips, rapid diagnostic kits",
+    "website": "https://www.liofilchem.com",
+    "catalogueUrl": null,
+    "logoFile": "liofilchem.png"
+  },
+  {
+    "id": "sacace",
+    "name": "Sacace Biotechnologies",
+    "country": "Italy",
+    "description": "Developer and manufacturer of PCR-based molecular diagnostics kits for infectious disease detection, genetic testing, and research applications.",
+    "products": "Real-time PCR kits, conventional PCR kits, DNA/RNA extraction kits, molecular diagnostics reagents",
+    "website": "https://www.sacace.com",
+    "catalogueUrl": "/catalogues/sacace-catalogue-2026.pdf",
+    "logoFile": "sacace.png"
+  },
+  {
+    "id": "viennalab",
+    "name": "ViennaLab Diagnostics",
+    "country": "Austria",
+    "description": "Specialist in reverse-hybridization StripAssay technology for pharmacogenetics, thrombophilia screening, HLA typing, and hereditary disease testing.",
+    "products": "StripAssay kits (pharmacogenetics, cardiovascular, HLA), RealFast PCR kits, PGX genotyping panels",
+    "website": "https://www.viennalab.com",
+    "catalogueUrl": "/catalogues/viennalab-catalogue-2026.pdf",
+    "logoFile": "viennalab.png"
+  },
+  {
+    "id": "micreos",
+    "name": "Micreos Food Safety BV",
+    "country": "Netherlands",
+    "description": "Pioneer in bacteriophage-based food safety solutions. PhageGuard products provide targeted pathogen control without chemicals or antibiotics.",
+    "products": "PhageGuard Listex (anti-Listeria), PhageGuard S (anti-Salmonella), bacteriophage-based biocontrol solutions",
+    "website": "https://www.phageguard.com",
+    "catalogueUrl": null,
+    "logoFile": "micreos.png"
+  },
+  {
+    "id": "medix",
+    "name": "Medix Biochemica Oy",
+    "country": "Finland",
+    "description": "Leading supplier of immunodiagnostic raw materials — monoclonal and polyclonal antibodies, antigens, and enzymes used by IVD manufacturers worldwide.",
+    "products": "Monoclonal antibodies, polyclonal antibodies, antigens, enzymes (HRP, AP), blocking reagents",
+    "website": "https://www.medixbiochemica.com",
+    "catalogueUrl": null,
+    "logoFile": "medix.png"
+  },
+  {
+    "id": "candor",
+    "name": "Candor Bioscience",
+    "country": "Germany",
+    "description": "The ELISA Experts — developers of immunoassay optimization reagents that eliminate interference and improve assay performance. Part of the Medix Biochemica Group.",
+    "products": "LowCross-Buffer, Assay Defender, sample diluents, blocking solutions, stabilizers for ELISA and lateral flow",
+    "website": "https://www.candor-bioscience.de",
+    "catalogueUrl": "/catalogues/candor-catalogue-2025.pdf",
+    "logoFile": "candor.png"
+  }
+]

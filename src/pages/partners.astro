@@ -1,0 +1,40 @@
+---
+import Base from '../layouts/Base.astro';
+import Hero from '../components/Hero.astro';
+import partners from '../content/partners.json';
+---
+
+<Base title="Partners" description="BioAzure represents 6 world-class biotech and diagnostics companies across Europe and beyond.">
+  <Hero title="Our Global Partners" subtitle="World-class technology providers, trusted by BioAzure since 2009" />
+
+  <section class="py-16">
+    <div class="mx-auto max-w-5xl space-y-12 px-4">
+      {partners.map((partner, i) => (
+        <div class:list={['flex flex-col gap-6 rounded-xl border border-gray-200 p-8 md:flex-row', i % 2 !== 0 && 'md:flex-row-reverse']}>
+          <div class="flex flex-shrink-0 items-center justify-center md:w-48">
+            <img src={`/logos/${partner.logoFile}`} alt={partner.name} class="max-h-16 w-auto" loading="lazy" />
+          </div>
+          <div class="flex-1">
+            <h2 class="mb-1 text-xl font-semibold text-primary">{partner.name}</h2>
+            <p class="mb-1 text-xs font-medium uppercase tracking-wider text-gray-400">{partner.country}</p>
+            <p class="mb-3 text-gray-600">{partner.description}</p>
+            <p class="mb-4 text-sm text-gray-500"><strong>Products:</strong> {partner.products}</p>
+            <div class="flex flex-wrap gap-2">
+              <a href="/products" class="rounded-lg bg-accent px-4 py-2 text-sm font-semibold text-white hover:bg-accent-dark">
+                View Products
+              </a>
+              {partner.catalogueUrl && (
+                <a href={partner.catalogueUrl} target="_blank" rel="noopener" class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary">
+                  Download Catalogue
+                </a>
+              )}
+              <a href={partner.website} target="_blank" rel="noopener" class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-600 hover:text-primary">
+                Visit Website &rarr;
+              </a>
+            </div>
+          </div>
+        </div>
+      ))}
+    </div>
+  </section>
+</Base>

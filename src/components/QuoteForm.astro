@@ -1,0 +1,44 @@
+---
+const applications = ['Clinical Microbiology', 'Molecular Diagnostics', 'Food Safety', 'IVD Raw Materials', 'Other'];
+---
+
+<form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+  <input type="hidden" name="access_key" value="YOUR_WEB3FORMS_KEY" />
+  <input type="hidden" name="subject" value="New inquiry from BioAzure website" />
+  <input type="hidden" name="redirect" value="https://bioazure.com/contact?sent=true" />
+
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label for="name" class="mb-1 block text-sm font-medium text-gray-700">Name *</label>
+      <input id="name" name="name" required class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+    </div>
+    <div>
+      <label for="organization" class="mb-1 block text-sm font-medium text-gray-700">Organization</label>
+      <input id="organization" name="organization" class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+    </div>
+  </div>
+  <div class="grid gap-4 sm:grid-cols-2">
+    <div>
+      <label for="email" class="mb-1 block text-sm font-medium text-gray-700">Email *</label>
+      <input id="email" name="email" type="email" required class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+    </div>
+    <div>
+      <label for="phone" class="mb-1 block text-sm font-medium text-gray-700">Phone</label>
+      <input id="phone" name="phone" type="tel" class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary" />
+    </div>
+  </div>
+  <div>
+    <label for="interest" class="mb-1 block text-sm font-medium text-gray-700">Product Interest</label>
+    <select id="interest" name="product_interest" class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary">
+      <option value="">Select an area</option>
+      {applications.map(a => <option value={a}>{a}</option>)}
+    </select>
+  </div>
+  <div>
+    <label for="message" class="mb-1 block text-sm font-medium text-gray-700">Message *</label>
+    <textarea id="message" name="message" rows="4" required class="w-full rounded-lg border border-gray-300 px-4 py-2 focus:border-primary focus:outline-none focus:ring-1 focus:ring-primary"></textarea>
+  </div>
+  <button type="submit" class="w-full rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark sm:w-auto">
+    Send Inquiry
+  </button>
+</form>

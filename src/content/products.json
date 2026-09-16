@@ -1,0 +1,58 @@
+[
+  {
+    "principalId": "liofilchem",
+    "application": "clinical-microbiology",
+    "family": "Culture Media",
+    "description": "Ready-to-use culture media plates, tubes, and bottles for clinical microbiology laboratories. Covers aerobic, anaerobic, and selective media for pathogen isolation and identification.",
+    "keyProducts": ["Prepared media plates", "Dehydrated media", "Chromogenic media", "Blood culture media"],
+    "catalogueUrl": null
+  },
+  {
+    "principalId": "liofilchem",
+    "application": "clinical-microbiology",
+    "family": "Antimicrobial Susceptibility Testing",
+    "description": "Antibiotic susceptibility discs, MIC test strips, and panels compliant with EUCAST and CLSI standards for accurate resistance profiling.",
+    "keyProducts": ["Antibiotic discs", "MIC Test Strips", "AST panels"],
+    "catalogueUrl": null
+  },
+  {
+    "principalId": "sacace",
+    "application": "molecular-diagnostics",
+    "family": "PCR Diagnostic Kits",
+    "description": "Real-time and conventional PCR kits for detection of infectious diseases including hepatitis, HIV, HPV, respiratory pathogens, and STIs.",
+    "keyProducts": ["Hepatitis B/C PCR", "HIV-1 quantitative PCR", "HPV genotyping", "Respiratory panel", "STI panel"],
+    "catalogueUrl": "/catalogues/sacace-catalogue-2026.pdf"
+  },
+  {
+    "principalId": "viennalab",
+    "application": "molecular-diagnostics",
+    "family": "StripAssay Kits",
+    "description": "Reverse-hybridization strip-based assays for genotyping and mutation detection. Gold standard in pharmacogenetics and hereditary disease screening.",
+    "keyProducts": ["Pharmacogenetics StripAssay (CYP2D6, CYP2C19)", "Thrombophilia StripAssay (Factor V, Factor II)", "HLA-B27 StripAssay", "Lactose intolerance StripAssay"],
+    "catalogueUrl": "/catalogues/viennalab-catalogue-2026.pdf"
+  },
+  {
+    "principalId": "micreos",
+    "application": "food-safety",
+    "family": "PhageGuard Solutions",
+    "description": "Bacteriophage-based biocontrol products that target and eliminate specific foodborne pathogens on food surfaces without chemicals, antibiotics, or impact on taste.",
+    "keyProducts": ["PhageGuard Listex (anti-Listeria)", "PhageGuard S (anti-Salmonella)"],
+    "catalogueUrl": null
+  },
+  {
+    "principalId": "medix",
+    "application": "ivd-raw-materials",
+    "family": "Immunodiagnostic Raw Materials",
+    "description": "High-quality antibodies, antigens, and enzymes for IVD test kit manufacturing. Used by diagnostics companies worldwide to build immunoassays.",
+    "keyProducts": ["Cardiac markers (Troponin, CRP, BNP)", "Infectious disease antibodies", "Hormone antibodies", "HRP and AP enzymes"],
+    "catalogueUrl": null
+  },
+  {
+    "principalId": "candor",
+    "application": "ivd-raw-materials",
+    "family": "Immunoassay Optimization",
+    "description": "Reagents that eliminate matrix interference, reduce background noise, and stabilize immunoassay components for ELISA, lateral flow, and CLIA development.",
+    "keyProducts": ["LowCross-Buffer (interference blocker)", "Assay Defender (long-term stabilizer)", "HAMA blockers", "Sample diluents"],
+    "catalogueUrl": "/catalogues/candor-catalogue-2025.pdf"
+  }
+]

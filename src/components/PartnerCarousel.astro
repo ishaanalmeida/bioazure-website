@@ -1,0 +1,27 @@
+---
+import partners from '../content/partners.json';
+---
+
+<section class="overflow-hidden bg-gray-50 py-10">
+  <p class="mb-6 text-center text-sm font-medium uppercase tracking-wider text-gray-500">
+    Representing the world's leading biotech innovators
+  </p>
+  <div class="partner-scroll flex items-center gap-16">
+    {[...partners, ...partners].map(p => (
+      <a href="/partners" class="flex-shrink-0 opacity-60 grayscale transition hover:opacity-100 hover:grayscale-0">
+        <img src={`/logos/${p.logoFile}`} alt={p.name} class="h-10 w-auto" loading="lazy" />
+      </a>
+    ))}
+  </div>
+</section>
+
+<style>
+  .partner-scroll {
+    animation: scroll 30s linear infinite;
+    width: max-content;
+  }
+  @keyframes scroll {
+    to { transform: translateX(-50%); }
+  }
+  .partner-scroll:hover { animation-play-state: paused; }
+</style>

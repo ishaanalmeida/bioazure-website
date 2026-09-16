@@ -1,0 +1,49 @@
+---
+import Base from '../../layouts/Base.astro';
+import Hero from '../../components/Hero.astro';
+import ProductCard from '../../components/ProductCard.astro';
+import applications from '../../content/applications.json';
+import products from '../../content/products.json';
+import partners from '../../content/partners.json';
+
+const app = applications.find(a => a.slug === 'molecular-diagnostics')!;
+const appProducts = products.filter(p => p.application === app.slug);
+---
+
+<Base title={app.title} description={app.description}>
+  <Hero title={app.title} subtitle={app.description} />
+
+  <section class="py-16">
+    <div class="mx-auto max-w-7xl px-4">
+      <h2 class="mb-2 text-2xl font-bold text-primary">Who uses these products</h2>
+      <div class="mb-8 flex flex-wrap gap-2">
+        {app.customerTypes.map(ct => (
+          <span class="rounded-full bg-primary/10 px-3 py-1 text-sm font-medium text-primary">{ct}</span>
+        ))}
+      </div>
+
+      <h2 class="mb-6 text-2xl font-bold text-primary">Available Products</h2>
+      <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+        {appProducts.map(prod => {
+          const partner = partners.find(p => p.id === prod.principalId)!;
+          return (
+            <ProductCard
+              principalName={partner.name}
+              principalLogo={partner.logoFile}
+              family={prod.family}
+              description={prod.description}
+              keyProducts={prod.keyProducts}
+              catalogueUrl={prod.catalogueUrl}
+            />
+          );
+        })}
+      </div>
+
+      <div class="mt-12 text-center">
+        <a href="/contact" class="rounded-lg bg-accent px-6 py-3 font-semibold text-white hover:bg-accent-dark">
+          Request a Quote
+        </a>
+      </div>
+    </div>
+  </section>
+</Base>

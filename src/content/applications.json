@@ -1,0 +1,38 @@
+[
+  {
+    "id": "clinical-microbiology",
+    "slug": "clinical-microbiology",
+    "title": "Clinical Microbiology",
+    "description": "Culture media, antimicrobial susceptibility testing, and rapid diagnostics for pathogen identification in clinical laboratories and hospitals.",
+    "customerTypes": ["Referral laboratories", "Multispecialty hospitals", "Government hospitals", "Public health laboratories"],
+    "principalIds": ["liofilchem"],
+    "iconFile": "icon-clinical-micro.svg"
+  },
+  {
+    "id": "molecular-diagnostics",
+    "slug": "molecular-diagnostics",
+    "title": "Molecular Diagnostics",
+    "description": "PCR kits, genotyping assays, and strip-based tests for infectious disease detection, pharmacogenetics, and hereditary disease screening.",
+    "customerTypes": ["Referral laboratories", "Hospitals", "Research institutions", "Educational institutions"],
+    "principalIds": ["viennalab", "sacace"],
+    "iconFile": "icon-molecular-dx.svg"
+  },
+  {
+    "id": "food-safety",
+    "slug": "food-safety",
+    "title": "Food Safety & Testing",
+    "description": "Bacteriophage-based biocontrol solutions for targeted pathogen elimination in food processing — chemical-free, antibiotic-free, and effective.",
+    "customerTypes": ["Food manufacturers", "Food exporters", "Food testing laboratories", "Quality assurance departments"],
+    "principalIds": ["micreos"],
+    "iconFile": "icon-food-safety.svg"
+  },
+  {
+    "id": "ivd-raw-materials",
+    "slug": "ivd-raw-materials",
+    "title": "IVD Raw Materials",
+    "description": "Antibodies, antigens, enzymes, and assay optimization reagents for in-vitro diagnostic kit manufacturers and research teams.",
+    "customerTypes": ["IVD manufacturers", "Research institutions", "Diagnostic kit developers"],
+    "principalIds": ["medix", "candor"],
+    "iconFile": "icon-ivd-raw.svg"
+  }
+]

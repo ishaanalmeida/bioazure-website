@@ -1,0 +1,39 @@
+---
+interface Props {
+  principalName: string;
+  principalLogo: string;
+  family: string;
+  description: string;
+  keyProducts: string[];
+  catalogueUrl: string | null;
+}
+
+const { principalName, principalLogo, family, description, keyProducts, catalogueUrl } = Astro.props;
+---
+
+<div class="flex flex-col rounded-xl border border-gray-200 bg-white p-6 transition hover:shadow-lg">
+  <div class="mb-4 flex items-center gap-3">
+    <img src={`/logos/${principalLogo}`} alt={principalName} class="h-8 w-auto" loading="lazy" />
+    <span class="text-xs font-medium uppercase tracking-wider text-gray-400">{principalName}</span>
+  </div>
+  <h3 class="mb-2 text-lg font-semibold text-primary">{family}</h3>
+  <p class="mb-4 flex-1 text-sm text-gray-600">{description}</p>
+  <ul class="mb-4 space-y-1">
+    {keyProducts.map(p => (
+      <li class="flex items-start gap-2 text-sm text-gray-500">
+        <span class="mt-1 h-1.5 w-1.5 flex-shrink-0 rounded-full bg-accent" />
+        {p}
+      </li>
+    ))}
+  </ul>
+  <div class="mt-auto flex gap-2">
+    <a href="/contact" class="flex-1 rounded-lg bg-accent px-4 py-2 text-center text-sm font-semibold text-white hover:bg-accent-dark">
+      Request a Quote
+    </a>
+    {catalogueUrl && (
+      <a href={catalogueUrl} target="_blank" rel="noopener" class="rounded-lg border border-gray-300 px-4 py-2 text-sm font-medium text-gray-600 hover:border-primary hover:text-primary">
+        Catalogue
+      </a>
+    )}
+  </div>
+</div>
