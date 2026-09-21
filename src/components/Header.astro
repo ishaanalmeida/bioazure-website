@@ -40,7 +40,7 @@ const currentPath = Astro.url.pathname;
 
     <button
       id="mobile-menu-btn"
-      class="text-gray-600 md:hidden"
+      class="-mr-3 p-3 text-gray-600 md:hidden"
       aria-label="Toggle menu"
     >
       <svg class="h-6 w-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -51,7 +51,7 @@ const currentPath = Astro.url.pathname;
 
   <nav id="mobile-menu" class="hidden border-t bg-white px-4 pb-4 md:hidden">
     {navLinks.map(link => (
-      <a href={link.href} class="block py-2 text-sm text-gray-600 hover:text-primary">
+      <a href={link.href} class="block py-3 text-base text-gray-600 hover:text-primary">
         {link.label}
       </a>
     ))}

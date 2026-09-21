@@ -45,7 +45,7 @@ const appProducts = products.filter(p => p.application === app.slug);
 
       <div class="mt-12 rounded-xl bg-surface p-8 text-center">
         <h3 class="mb-2 text-lg font-semibold text-primary">Need help choosing the right product?</h3>
-        <p class="mb-4 text-sm text-gray-600">Tell us about your lab setup and testing needs — we'll recommend the best solution.</p>
+        <p class="mb-4 text-base text-gray-600">Tell us about your lab setup and testing needs — we'll recommend the best solution.</p>
         <a href={`${b}/contact?product=${encodeURIComponent(app.title)}`} class="inline-block rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark">
           Request a Quote for {app.title}
         </a>

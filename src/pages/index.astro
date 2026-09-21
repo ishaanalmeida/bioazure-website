@@ -87,12 +87,12 @@ const b = import.meta.env.BASE_URL.replace(/\/$/, '');
         Tell us your application, organism, or test — we'll point you to the right product from our principals.
       </p>
       <div class="flex flex-wrap justify-center gap-4">
-        <a href={`${b}/products`} class="rounded-lg bg-primary px-6 py-3 font-semibold text-white transition hover:bg-primary-light">
-          Browse All Products
-        </a>
-        <button id="open-chat-home" class="rounded-lg border-2 border-accent px-6 py-3 font-semibold text-accent transition hover:bg-accent hover:text-white">
+        <button id="open-chat-home" class="rounded-lg bg-accent px-6 py-3 font-semibold text-white transition hover:bg-accent-dark">
           Ask the AI Product Finder
         </button>
+        <a href={`${b}/products`} class="rounded-lg border-2 border-primary px-6 py-3 font-semibold text-primary transition hover:bg-primary hover:text-white">
+          Browse All Products
+        </a>
       </div>
     </div>
   </section>

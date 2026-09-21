@@ -26,7 +26,7 @@ function getPartner(id: string) {
       <div class="fade-in flex flex-col items-center gap-4 rounded-xl border border-accent/20 bg-white p-6 text-center shadow-sm md:flex-row md:text-left">
         <div class="flex-1">
           <h2 class="mb-1 text-lg font-semibold text-primary">Not sure what you need?</h2>
-          <p class="text-sm text-gray-600">Describe your application — our AI assistant recommends the right product.</p>
+          <p class="text-base text-gray-600">Describe your application — our AI assistant recommends the right product.</p>
         </div>
         <button
           id="open-chat-from-products"
@@ -92,7 +92,7 @@ function getPartner(id: string) {
                 <img src={`${b}/images/${app.iconFile}`} alt="" class="h-10 w-10" loading="lazy" />
                 <div>
                   <h3 class="text-xl font-bold text-primary">{app.title}</h3>
-                  <p class="text-sm text-gray-500">{app.description.split('.')[0]}.</p>
+                  <p class="text-base text-gray-500">{app.description.split('.')[0]}.</p>
                 </div>
               </div>
               <div class="grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
